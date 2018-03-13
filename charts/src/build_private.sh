@@ -13,7 +13,7 @@ rm ./index.yaml
 helm package libertysimple
 
 #CREATE INDEX.YAML
-helm repo index --url https://raw.githubusercontent.com/niklaushirt/libertysimple/raw/master/charts/stable/repo/stable/ ./
+helm repo index --url https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/ ./
 
 #-----------------------------------------------------------------------------------------------------------------
 #REMOVE PACKAGES in charts
