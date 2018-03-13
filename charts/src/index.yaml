@@ -1,9 +1,9 @@
 apiVersion: v1
 entries:
   libertysimple:
-  - created: 2018-03-13T12:19:09.781369+01:00
+  - created: 2018-03-13T12:51:55.122746+01:00
     description: Simple Liberty Demo
-    digest: 7c070230a6151910372f1487367fc1eddfe50f46bb6185dd7f1ee02b4bc7bec2
+    digest: 576f1be38870bcba3e14078e9abe8f2cedf5364cf66fa90c6120f01ba180302a
     home: https://github.com/kubernetes/helm
     icon: https://github.com/niklaushirt/libertysimple/raw/master/charts/stable/icons/liberty.png
     keywords:
@@ -20,9 +20,9 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.1.0.tgz
     version: 1.1.0
-  - created: 2018-03-13T12:19:09.780964+01:00
+  - created: 2018-03-13T12:51:55.122452+01:00
     description: Simple Liberty Demo
-    digest: 33a32e7f8a0f4d07a898375744fa70d995d9f46a7943f6581a2f5a580c835d78
+    digest: c71d06df443ec83ce30df3785a0ca892286fdf997073cef0f1c480cb144f9f4a
     home: https://github.com/kubernetes/helm
     icon: https://github.com/niklaushirt/libertysimple/raw/master/charts/stable/icons/liberty.png
     keywords:
@@ -39,4 +39,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.0.0.tgz
     version: 1.0.0
-generated: 2018-03-13T12:19:09.779708+01:00
+generated: 2018-03-13T12:51:55.12185+01:00

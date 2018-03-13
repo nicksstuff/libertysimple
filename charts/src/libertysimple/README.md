@@ -21,7 +21,7 @@ This chart deploys a single Liberty Demo App instance into an IBM Cloud private 
 To install the chart with the release name `libertysimple`:
 
 ```sh
-helm install --name libertysimple DEMO/libertysimple
+helm install --name libertysimple LIBERTY/libertysimple
 ```
 
 > **Tip**: See all the resources deployed by the chart using `kubectl get all -l release=libertysimple`
@@ -39,14 +39,10 @@ The command removes all the Kubernetes components associated with the chart, exc
 ```sh
 kubectl delete pvc -l release=libertysimple
 ```
-# Version  for Node Red
-tag: 0.17.5
 
-#Default Node Port
+# Default Node Port
 nodePort: 32233
-
-
 
 # Copyright
 
-© Copyright Niklaus Hirt 2017
+© Copyright Niklaus Hirt 2018
