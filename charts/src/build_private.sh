@@ -2,7 +2,7 @@
 #-----------------------------------------------------------------------------------------------------------------
 #REMOVE PACKAGES
 #-----------------------------------------------------------------------------------------------------------------
-rm ./libertysimple-1.0.0.tgz
+#rm ./libertysimple-1.0.0.tgz
 
 #REMOVE INDEX.YAML
 rm ./index.yaml
@@ -18,7 +18,7 @@ helm repo index --url https://raw.githubusercontent.com/niklaushirt/libertysimpl
 #-----------------------------------------------------------------------------------------------------------------
 #REMOVE PACKAGES in charts
 #-----------------------------------------------------------------------------------------------------------------
-rm ../stable/repo/stable/libertysimple-1.0.0.tgz
+#rm ../stable/repo/stable/libertysimple-1.0.0.tgz
 
 #REMOVE INDEX.YAML in charts
 rm ../stable/repo/stable/index.yaml
@@ -29,6 +29,7 @@ rm ../stable/repo/stable/index.yaml
 #-----------------------------------------------------------------------------------------------------------------
 
 cp libertysimple-1.0.0.tgz ../stable/repo/stable/
+cp libertysimple-1.1.0.tgz ../stable/repo/stable/
 
 #COPY INDEX.YAML
 cp index.yaml ../stable/repo/stable/index.yaml
