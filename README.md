@@ -2,6 +2,8 @@
 
 This project contains a simple servlet application.
 
+## Build WAR
+
 ```bash
 sudo apt-get remove git
 sudo apt-get install git
@@ -11,17 +13,18 @@ mvn install
 sudo apt-get update
 sudo apt-get install maven
 
-mvn install
-git add .
-git commit -m "WAR"
+
+```
+
+## Build Docker Images
+
+```bash
 
 sudo rm -r libertysimple/
 git clone https://github.com/niklaushirt/libertysimple.git
 cd libertysimple/
 docker build -t libertysimple:1.0.0 docker_100
 docker build -t libertysimple:1.1.0 docker_110
-
-docker build -t libertysimple:1.0.0 .
 
 
 ```
