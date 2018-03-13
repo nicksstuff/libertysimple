@@ -11,5 +11,5 @@ service:
 replicaCount: 1
 image:
   repository: libertysimple
-  tag: 1.0.0
+  tag: 1.1.0
   pullPolicy: IfNotPresent
