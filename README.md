@@ -18,8 +18,8 @@ git commit -m "WAR"
 sudo rm -r libertysimple/
 git clone https://github.com/niklaushirt/libertysimple.git
 cd libertysimple/
-docker build -t libertysimple:1.0.0 Dockerfile_100
-docker build -t libertysimple:1.1.0 Dockerfile_110
+docker build -t libertysimple:1.0.0 docker_100
+docker build -t libertysimple:1.1.0 docker_110
 
 docker build -t libertysimple:1.0.0 .
 
