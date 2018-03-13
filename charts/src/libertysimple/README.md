@@ -43,7 +43,7 @@ kubectl delete pvc -l release=libertysimple
 tag: 0.17.5
 
 #Default Node Port
-nodePort: 34242
+nodePort: 32233
 
 
 
