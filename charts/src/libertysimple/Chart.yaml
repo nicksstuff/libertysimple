@@ -1,6 +1,6 @@
 description: Simple Liberty Demo
 home: https://github.com/kubernetes/helm
-icon: https://github.com/niklaushirt/libertysimple/raw/master/stable/icons/liberty.png
+icon: https://github.com/niklaushirt/libertysimple/raw/master/charts/stable/icons/liberty.png
 keywords:
 - http
 - nginx

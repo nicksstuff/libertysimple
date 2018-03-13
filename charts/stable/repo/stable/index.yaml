@@ -1,11 +1,11 @@
 apiVersion: v1
 entries:
   libertysimple:
-  - created: 2018-03-13T10:49:40.190364+01:00
+  - created: 2018-03-13T10:53:52.455485+01:00
     description: Simple Liberty Demo
-    digest: fb5fc298a52b5eea51dfb5916b229fe15d4ae4d0f2f453d5643a064d8cbf5b21
+    digest: 30d6770c0bf512f1589f4a4b8cc56bc7f7ad309180d1f0c95c708c801fa9c9e0
     home: https://github.com/kubernetes/helm
-    icon: https://github.com/niklaushirt/libertysimple/raw/master/stable/icons/liberty.png
+    icon: https://github.com/niklaushirt/libertysimple/raw/master/charts/stable/icons/liberty.png
     keywords:
     - http
     - nginx
@@ -20,4 +20,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/stable/master/repo/stable/libertysimple-1.0.0.tgz
     version: 1.0.0
-generated: 2018-03-13T10:49:40.188316+01:00
+generated: 2018-03-13T10:53:52.453123+01:00
