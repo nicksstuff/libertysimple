@@ -29,6 +29,12 @@ docker build -t libertysimple:1.1.0 docker_110
 
 ```
 
+## Add HELM repository
+
+```
+https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/
+```
+
 ## Running the application using the command-line
 
 This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server.
