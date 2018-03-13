@@ -1,0 +1,15 @@
+description: Simple Liberty Demo
+home: https://github.com/kubernetes/helm
+icon: https://github.com/niklaushirt/libertysimple/raw/master/stable/icons/liberty.png
+keywords:
+- http
+- nginx
+- www
+- web
+maintainers:
+- email: nikh@ch.ibm.com
+  name: Niklaus Hirt
+name: libertysimple
+sources:
+- https://github.com/niklaushirt/libertysimple
+version: 1.0.0
