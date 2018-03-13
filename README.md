@@ -1,32 +1,40 @@
-# Java Hello World Sample
+# Libery Simple Example
 
 This project contains a simple servlet application.
 
 ```bash
-docker stop test
+sudo apt-get remove git
+sudo apt-get install git
+git clone https://github.com/niklaushirt/libertysimple.git
+cd libertysimple/
 mvn install
+sudo apt-get update
+sudo apt-get install maven
 
-docker run -v $PWD:/src -w /src -v $M2_HOME:/root/.m2 maven:3.5.2-slim mvn install
-docker build -t test .
-docker run --name test -d --rm -p 9080:9080 test
+mvn install
+git add .
+git commit -m "WAR"
 
-docker stop test
+sudo rm -r libertysimple/
+git clone https://github.com/niklaushirt/libertysimple.git
+cd libertysimple/
+docker build -t libertysimple:1.0.0 .
 ```
 
 ## Running the application using the command-line
 
-This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server. 
+This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in][] to automatically download and install Liberty from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server.
 
 Use the following steps to run the application locally:
 
 1. Execute full Maven build to create the `target/JavaHelloWorldApp.war` file:
-    
+
     ```bash
     mvn clean install
     ```
 
 2. Download and install Liberty, then use it to run the built application from step 1:
-    
+
     ```bash
     mvn liberty:run-server
     ```
@@ -34,11 +42,11 @@ Use the following steps to run the application locally:
     Once the server is running, the application will be available under [http://localhost:9080/JavaHelloWorldApp](http://localhost:9080/JavaHelloWorldApp).
 
 Use the following command to run the built application in Bluemix:
-    
+
     ```bash
     $ cf push <appname> -p target/JavaHelloWorldApp.war
     ```
-    
+
 ## Developing and Deploying using Eclipse
 
 IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into an existing Eclipse environment to assist in integrating the developer's integrated development environment (IDE) with Bluemix.
