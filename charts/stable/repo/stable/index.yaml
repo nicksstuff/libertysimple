@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   libertysimple:
-  - created: 2018-03-13T10:53:52.455485+01:00
+  - created: 2018-03-13T11:03:05.841145+01:00
     description: Simple Liberty Demo
     digest: 30d6770c0bf512f1589f4a4b8cc56bc7f7ad309180d1f0c95c708c801fa9c9e0
     home: https://github.com/kubernetes/helm
@@ -20,4 +20,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/stable/master/repo/stable/libertysimple-1.0.0.tgz
     version: 1.0.0
-generated: 2018-03-13T10:53:52.453123+01:00
+generated: 2018-03-13T11:03:05.840212+01:00
