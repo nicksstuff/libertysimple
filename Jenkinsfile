@@ -17,27 +17,27 @@ node {
     }
   }
   stage('CI-Docker-Build') {
-    sh "cd '$JENKINS_HOME/jobs/$JOB_BASE_NAME/workspace/'"
+    sh "cd '/home/demo/jenkins/workspace/$JOB_BASE_NAME/target/'"
     sh "ls"
-    //docker.withRegistry('http://mycluster.icp:8500', 'admin') {
-    //sh "sudo docker build -t test ."
+    docker.withTool("docker") {
     def customImage = docker.build("liberty_demo:demo")
     //customImage.push('demo')
-    //}
+    }
+
   }
   stage('CI-Push-To-UrbanCode') {
     step([$class: 'UCDeployPublisher',
-      siteName: 'LOCAL',
+      siteName: 'UCD',
       component: [
         $class: 'com.urbancode.jenkins.plugins.ucdeploy.VersionHelper$VersionBlock',
         componentName: 'LIBERTY',
         delivery: [
           $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeliveryHelper$Push',
           pushVersion: '${BUILD_NUMBER}',
-          baseDir: '$JENKINS_HOME/jobs/$JOB_BASE_NAME/workspace/',
+          baseDir: '/home/demo/jenkins/workspace/$JOB_BASE_NAME/',
           fileIncludePatterns: '*.*',
           fileExcludePatterns: '',
-          pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
+          //pushProperties: 'jenkins.server=Local\njenkins.reviewed=false',
           pushDescription: 'Pushed from Jenkins'
         ]
       ]
@@ -45,7 +45,7 @@ node {
   }
   stage('CD-Deploy-To-ICP') {
    step([$class: 'UCDeployPublisher',
-        siteName: 'LOCAL',
+        siteName: 'UCD',
         deploy: [
             $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeployHelper$DeployBlock',
             deployApp: 'DEMO',
@@ -53,9 +53,13 @@ node {
             deployProc: 'deploy',
             deployVersions: 'LIBERTY:${BUILD_NUMBER}',
             //deployVersions: 'LIBERTY:49',
-
+            createSnapshot: [
+                $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeployHelper$CreateSnapshotBlock',
+                snapshotName: 'LIBERTY_SNAPSHOT_${BUILD_NUMBER}'
+            ],
             deployOnlyChanged: false
         ]
+       
     ])
 }
 }
