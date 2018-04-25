@@ -1,7 +1,26 @@
 apiVersion: v1
 entries:
   libertysimple:
-  - created: 2018-03-13T17:28:49.025884+01:00
+  - created: 2018-04-25T17:15:30.668188+02:00
+    description: Simple Liberty Demo
+    digest: 5cff53d731dd3b29072435d68baefb26a204f8ae7634ee769c5bed48d5e1e913
+    home: https://github.com/kubernetes/helm
+    icon: https://github.com/niklaushirt/libertysimple/raw/master/charts/stable/icons/liberty.png
+    keywords:
+    - http
+    - nginx
+    - www
+    - web
+    maintainers:
+    - email: nikh@ch.ibm.com
+      name: Niklaus Hirt
+    name: libertysimple
+    sources:
+    - https://github.com/niklaushirt/libertysimple
+    urls:
+    - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.2.0.tgz
+    version: 1.2.0
+  - created: 2018-04-25T17:15:30.667196+02:00
     description: Simple Liberty Demo
     digest: 6f3bda6d52e329fc0845f72e7ddd7b2e6ad1645dbe96b244500a1bf7c729e6e9
     home: https://github.com/kubernetes/helm
@@ -20,7 +39,7 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.1.0.tgz
     version: 1.1.0
-  - created: 2018-03-13T17:28:49.025483+01:00
+  - created: 2018-04-25T17:15:30.666412+02:00
     description: Simple Liberty Demo
     digest: 903abe5c89677706a30e77cdefd527f272acff73e0c4c4ddaa3672393307d2bb
     home: https://github.com/kubernetes/helm
@@ -39,4 +58,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.0.0.tgz
     version: 1.0.0
-generated: 2018-03-13T17:28:49.024174+01:00
+generated: 2018-04-25T17:15:30.660136+02:00
