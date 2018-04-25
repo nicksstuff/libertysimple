@@ -25,8 +25,9 @@ git clone https://github.com/niklaushirt/libertysimple.git
 cd libertysimple/
 docker build -t libertysimple:1.0.0 docker_100
 docker build -t libertysimple:1.1.0 docker_110
+docker build -t libertysimple:1.2.0 docker_120
 
-
+docker run --rm -p 9080:9080 libertysimple:1.2.0
 ```
 
 ## Add HELM repository
