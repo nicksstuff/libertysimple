@@ -33,7 +33,7 @@ public class SimpleServlet extends HttpServlet {
           e.printStackTrace();
         }
         response.setContentType("text/html");
-        response.getWriter().print("Backend Working! Hello from " + hostname + "@" + ipString) ;
+        response.getWriter().print("Backend Working! Hello from " + ipString) ;
     }
 
 }
