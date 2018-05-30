@@ -89,7 +89,7 @@
                 <tr>
                     <td style="width:30%;"><a  target="_blank" href="https://www.ibm.com/cloud-computing/products/ibm-cloud-private/"><img src="./public/images/cloud_private.png"></a></td>
                     <td>
-                        <h2>Demo - V 1.3.0</h2>
+                        <h2>Demo - V 1.1.0</h2>
                         <h1>IBM Cloud Private</h1>
                         <p></p>
                         <p></p>
@@ -115,7 +115,8 @@
 
                         <script>
                             var xmlhttp = new XMLHttpRequest();
-                            var url = "http://demo.icp.ibm.com/demo/health";
+                            var url_host=window.location.host;
+                            var url = "http://" + url_host + "/demo/health";
 
                             xmlhttp.onreadystatechange = function () {
                                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -125,7 +126,7 @@
                                     document.getElementById("id0").innerHTML = myString;
                                 } else {
                                     document.getElementById("idStatus").innerHTML = "STATUS: ERROR";
-                                    document.getElementById("id0").innerHTML = "Server not running";
+                                    document.getElementById("id0").innerHTML = "Server not running. " + url_host + " not reachable.";
 
                                 }
 
