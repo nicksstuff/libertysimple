@@ -13,3 +13,4 @@ image:
   repository: libertysimple
   tag: 1.3.0
   pullPolicy: IfNotPresent
+deploy: private

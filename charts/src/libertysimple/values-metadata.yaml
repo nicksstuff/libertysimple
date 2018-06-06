@@ -1,0 +1,18 @@
+## Metadata for RabbitMQ configuration
+## This metadata is used to augment the value.yaml to drive ICP UI for configuration of the Helm chart installation
+
+deploy:
+ __metadata:
+   name: "deploy"
+   label: "Architecture"
+   description: "Worker node placement to deploy to. Choose an explicit placement here to override it."
+   type: "string"
+   immutable: "false"
+   required: true
+   options:
+     - label: "prod"
+       value: "private"
+     - label: "dev"
+       value: "public"
+     - label: "test"
+       value: "public"
