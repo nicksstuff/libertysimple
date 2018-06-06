@@ -1,0 +1,7 @@
+
+You must label your nodes with:
+kubectl get nodes
+
+kubectl label nodes <node-name> placement=private
+or
+kubectl label nodes <node-name> placement=public
