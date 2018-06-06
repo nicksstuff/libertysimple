@@ -4,15 +4,15 @@
 deploy:
  __metadata:
    name: "deploy"
-   label: "Architecture"
+   label: "Deployment Target"
    description: "Worker node placement to deploy to. Choose an explicit placement here to override it."
    type: "string"
    immutable: "false"
    required: true
    options:
-     - label: "prod"
-       value: "private"
-     - label: "dev"
-       value: "public"
-     - label: "test"
-       value: "public"
+     - label: "private"
+       value: "prod"
+     - label: "public"
+       value: "dev"
+     - label: "public"
+       value: "test"

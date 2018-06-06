@@ -7,6 +7,16 @@
 
 More documentation can be found [here](https://developer.ibm.com/wasdev/websphere-liberty/).
 
+#IMPORTANT
+
+You must label your nodes with:
+```bash
+kubectl get nodes
+
+kubectl label nodes <node-name> placement=private
+or
+kubectl label nodes <node-name> placement=public
+```
 
 # Introduction
 
