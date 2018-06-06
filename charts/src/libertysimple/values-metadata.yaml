@@ -10,9 +10,7 @@ deploy:
    immutable: "false"
    required: true
    options:
-     - label: "private"
-       value: "prod"
-     - label: "public"
-       value: "dev"
-     - label: "public"
-       value: "test"
+     - label: "local"
+       value: "local"
+     - label: "cloud"
+       value: "cloud"

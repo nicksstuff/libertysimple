@@ -13,9 +13,9 @@ You must label your nodes with:
 ```bash
 kubectl get nodes
 
-kubectl label nodes <node-name> placement=private
+kubectl label nodes <node-name> placement=local
 or
-kubectl label nodes <node-name> placement=public
+kubectl label nodes <node-name> placement=cloud
 ```
 
 # Introduction
