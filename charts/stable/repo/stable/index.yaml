@@ -1,9 +1,9 @@
 apiVersion: v1
 entries:
   libertysimple:
-  - created: 2018-06-06T12:21:39.378756+02:00
+  - created: 2018-06-11T16:59:40.726842+02:00
     description: Simple Liberty Demo
-    digest: 2007eee5009dec01acd02bc0e0e047d7708255bd7a21af11333ee6e6c8d21bd2
+    digest: 4cba9ddda3af835cfdd6bbbaf7fa4c283a7825df17d0f098832b80767f823998
     home: https://github.com/kubernetes/helm
     icon: https://github.com/niklaushirt/libertysimple/raw/master/charts/stable/icons/liberty.png
     keywords:
@@ -20,7 +20,7 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.3.0.tgz
     version: 1.3.0
-  - created: 2018-06-06T12:21:39.377966+02:00
+  - created: 2018-06-11T16:59:40.726504+02:00
     description: Simple Liberty Demo
     digest: 5cff53d731dd3b29072435d68baefb26a204f8ae7634ee769c5bed48d5e1e913
     home: https://github.com/kubernetes/helm
@@ -39,7 +39,7 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.2.0.tgz
     version: 1.2.0
-  - created: 2018-06-06T12:21:39.377224+02:00
+  - created: 2018-06-11T16:59:40.726225+02:00
     description: Simple Liberty Demo
     digest: 6f3bda6d52e329fc0845f72e7ddd7b2e6ad1645dbe96b244500a1bf7c729e6e9
     home: https://github.com/kubernetes/helm
@@ -58,7 +58,7 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.1.0.tgz
     version: 1.1.0
-  - created: 2018-06-06T12:21:39.376628+02:00
+  - created: 2018-06-11T16:59:40.725934+02:00
     description: Simple Liberty Demo
     digest: 903abe5c89677706a30e77cdefd527f272acff73e0c4c4ddaa3672393307d2bb
     home: https://github.com/kubernetes/helm
@@ -77,4 +77,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/libertysimple/master/charts/stable/repo/stable/libertysimple-1.0.0.tgz
     version: 1.0.0
-generated: 2018-06-06T12:21:39.375376+02:00
+generated: 2018-06-11T16:59:40.725365+02:00
