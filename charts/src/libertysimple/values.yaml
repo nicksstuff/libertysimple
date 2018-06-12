@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 deploy: local
 service:
-  url: demo.icp.ibm.com
+  url: demo.icp.cloud.com
   name: libertysimple
   type: NodePort
   externalPort: 9080
@@ -12,5 +12,5 @@ service:
 replicaCount: 2
 image:
   repository: libertysimple
-  tag: 1.2.0
+  tag: 1.3.0
   pullPolicy: IfNotPresent
