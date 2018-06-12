@@ -9,8 +9,8 @@ service:
   externalPort: 9080
   internalPort: 9080
   nodePort: 32233
-replicaCount: 1
+replicaCount: 2
 image:
   repository: libertysimple
-  tag: 1.3.0
+  tag: 1.2.0
   pullPolicy: IfNotPresent
