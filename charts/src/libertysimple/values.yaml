@@ -5,7 +5,7 @@ deploy: local
 service:
   url: demo.icp.cloud.com
   name: libertysimple
-  type: NodePort
+  type: LoadBalancer
   externalPort: 9080
   internalPort: 9080
   nodePort: 32233
